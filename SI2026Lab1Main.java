@@ -67,7 +67,7 @@ class Library {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 if (!book.isBorrowed()) {
                     book.setBorrowed(true);
-<<<=======
+==
                     System.out.println("Borrowed successfully");
 >>>>>>> 82e259b5468081374f9448654a8d4e74444e864e
                 } else {

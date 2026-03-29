@@ -1,0 +1,114 @@
+mkdir SI_2026_Lab1_211197
+cd SI_2026_Lab1_211197
+init git 
+napravivme direktorium, vlegovme vo nego i pochnavme lokalno git repo.
+
+git remote add origin https://github.com/NikolaPeshevski02/SI_2026_Lab1_211197.git - go povrzavme nashiot lokalen repo so toj na GitHub.
+
+nano README.md - kreirame nov README fajl i ja dodavame sodrzhinata
+
+git add . - gi dodavame site novi fajlovi vo staging area
+
+git commit -m "Initial commit" - go pravime inicijalniot commit
+
+nano SI2026Lab1Main.java - go stavame kodot vo file-ot
+
+git add . - gi stavame site fileovi vo staging area 
+
+git commit -m "Add starter code"
+
+git push -u origin master za da go pushneme vo githubot
+
+DEL 1:
+
+git switch -c feature-search-books - so dodatokot -c kreirame granka dodeka ja promenuvame grankata
+
+git commit -m "Implement book search" - commit so poraka
+
+git push origin feature-search-books - ja pushnavme grankata kon GitHub
+
+git switch master 
+
+git merge feature-search-books - mergnavme master so feature search books kade shto sega go imame feature-ot vo master
+
+$ git log --oneline --graph --all
+* d636272 (HEAD -> master, origin/feature-search-books, feature-search-books) Implement books search
+* c7dc575 (origin/master) Add starter code
+* 24c795b Initial Commit
+
+mergeot e fast-forward
+
+git push origin master - za sinhronizacija
+
+git switch -c feature-borrow-book
+
+git switch -c feature-genre-report
+
+Gi napraviv promenit pa 
+git add .
+git commit -m "Implement borrow book"
+
+git switch master
+
+posle promenata 
+
+git add .
+
+git commit -m "Update borrow message"
+
+git switch feature-borrow-book
+
+git add .
+
+git commit -m "Implement genre report"
+
+git switch feature-borrow-book
+
+git push origin feature-borrow-book
+
+gi pushnuvame do GitHub pa potoa pravime pull request
+
+git switch feature-genre-report
+
+git push origin feature-genre-report
+
+git switch feature-borrow-book
+
+git merge master
+
+napraviv promeni pa napraviv 
+
+git add . 
+
+git commit -m "Resolved conflicts"
+
+za da go zavrsham merge procesot
+$ git status
+On branch feature-borrow-book
+nothing to commit, working tree clean
+
+
+$ git log --oneline --graph --all
+*   e0c716e (HEAD -> master) Merged borrow book
+|\
+| * 8f38688 (origin/feature-genre-report, feature-genre-report) Implement genre report
+| | *   04a9d96 (feature-borrow-book) Merge branch 'master' into feature-borrow-book
+| | |\
+| |_|/
+|/| |
+* | | b7d4d99 Update borrow message
+* | | dce2870 Update borrow message
+|/ /
+| * 910a5a9 (origin/feature-borrow-book) Implement borrow book
+|/
+* d636272 (origin/master, origin/feature-search-books, feature-search-books) Implement books search
+* c7dc575 Add starter code
+* 24c795b Initial Commit
+
+napraviv git merge
+pa gi commitnav promenite
+
+ne e fast forward mergeot
+
+
+

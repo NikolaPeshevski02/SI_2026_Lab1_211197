@@ -1,0 +1,53 @@
+ git log --oneline --graph --all
+* d636272 (HEAD -> master, origin/feature-search-books, feature-search-books) Implement books search
+* c7dc575 (origin/master) Add starter code
+* 24c795b Initial Commit
+
+
+
+git log --oneline --graph --all
+*   e0c716e (HEAD -> master) Merged borrow book
+|\
+| * 8f38688 (origin/feature-genre-report, feature-genre-report) Implement genre report
+| | *   04a9d96 (feature-borrow-book) Merge branch 'master' into feature-borrow-book
+| | |\
+| |_|/
+|/| |
+* | | b7d4d99 Update borrow message
+* | | dce2870 Update borrow message
+|/ /
+| * 910a5a9 (origin/feature-borrow-book) Implement borrow book
+|/
+* d636272 (origin/master, origin/feature-search-books, feature-search-books) Implement books search
+* c7dc575 Add starter code
+* 24c795b Initial Commit
+
+
+
+
+git log --oneline --graph --all
+*   b9b0ffb (HEAD -> master, origin/master, origin/HEAD) Conflict resolved
+|\
+* \   e0c716e Merged borrow book
+|\ \
+| | | *   04a9d96 (feature-borrow-book) Merge branch 'master' into feature-borrow-book
+| | | |\
+| |_|_|/
+|/| | |
+* | | | b7d4d99 Update borrow message
+* | | | dce2870 Update borrow message
+| | | | * d16df38 (origin/feature-genre-report) Merge branch 'master' into feature-genre-report
+| | |_|/|
+| |/| |/
+| | |/|
+| | * | 82e259b Merge pull request #2 from NikolaPeshevski02/feature-borrow-book
+| |/| |
+|/| |/
+| | * 910a5a9 (origin/feature-borrow-book) Implement borrow book
+| |/
+|/|
+| * 8f38688 (feature-genre-report) Implement genre report
+|/
+* d636272 (origin/feature-search-books, feature-search-books) Implement books search
+* c7dc575 Add starter code
+* 24c795b Initial Commit
