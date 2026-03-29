@@ -67,7 +67,9 @@ class Library {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 if (!book.isBorrowed()) {
                     book.setBorrowed(true);
-                    System.out.println("Book checked outgit.");
+<<<=======
+                    System.out.println("Borrowed successfully");
+>>>>>>> 82e259b5468081374f9448654a8d4e74444e864e
                 } else {
                     System.out.println("Book is already borrowed.");
                 }
@@ -136,6 +138,11 @@ public class SI2026Lab1Main {
         }else{
             System.out.println("Book not found.");
         }
+<<<<<<< HEAD
         library.printBorrowedBooks("Programming");
     }
+=======
+        library.borrowBook("Clean Code");
+      }
+>>>>>>> 82e259b5468081374f9448654a8d4e74444e864e
 }
