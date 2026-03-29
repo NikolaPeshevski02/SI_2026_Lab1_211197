@@ -67,7 +67,7 @@ class Library {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 if (!book.isBorrowed()) {
                     book.setBorrowed(true);
-                    System.out.println("Book checked out.");
+                    System.out.println("Book checked outgit.");
                 } else {
                     System.out.println("Book is already borrowed.");
                 }
